@@ -156,6 +156,7 @@ HTML = """
       <button class="cat-btn" data-cat="Ψώνια" onclick="selectCat(this)"><span class="emoji">🛍️</span>Ψώνια</button>
       <button class="cat-btn" data-cat="Διάφορα" onclick="selectCat(this)"><span class="emoji">🗂️</span>Διάφορα</button>
       <button class="cat-btn" data-cat="Καφές" onclick="selectCat(this)"><span class="emoji">☕</span>Καφές</button>
+      <button class="cat-btn" data-cat="Βενζίνη" onclick="selectCat(this)"><span class="emoji">⛽</span>Βενζίνη</button>
     </div>
   </div>
   <div id="notes-section" style="display:none" class="card">
