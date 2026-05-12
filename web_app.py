@@ -316,7 +316,7 @@ async function analyze() {
     });
     const data = await res.json();
     if (!data.ok) { res_div.innerHTML = '<div class="empty"><div class="empty-icon">😕</div>Δεν βρέθηκαν δεδομένα</div>'; return; }
-    const catColors = {"Φαγητό Έξω":"#FF6B6B","Ποτό":"#4ECDC4","Delivery":"#FFE66D","Σούπερ Μάρκετ":"#6BCB77","Συνδρομές":"#4D96FF","Ψώνια":"#C77DFF","Διάφορα":"#F4A261","Καφές":"#C9A96E"};
+        const catColors = {"Φαγητό Έξω":"#FF6B6B","Ποτό":"#4ECDC4","Delivery":"#FFE66D","Σούπερ Μάρκετ":"#6BCB77","Συνδρομές":"#4D96FF","Ψώνια":"#C77DFF","Διάφορα":"#F4A261","Καφές":"#C9A96E","Βενζίνη":"#E63946"};
     let barsHtml = data.categories.map(c => `
       <div class="cat-row">
         <div class="cat-row-header">
@@ -339,7 +339,7 @@ async function loadHistory() {
   try {
     const res = await fetch('/history');
     const data = await res.json();
-    const catColors = {"Φαγητό Έξω":"#FF6B6B","Ποτό":"#4ECDC4","Delivery":"#FFE66D","Σούπερ Μάρκετ":"#6BCB77","Συνδρομές":"#4D96FF","Ψώνια":"#C77DFF","Διάφορα":"#F4A261","Καφές":"#C9A96E"};
+    const catColors = {"Φαγητό Έξω":"#FF6B6B","Ποτό":"#4ECDC4","Delivery":"#FFE66D","Σούπερ Μάρκετ":"#6BCB77","Συνδρομές":"#4D96FF","Ψώνια":"#C77DFF","Διάφορα":"#F4A261","Καφές":"#C9A96E","Βενζίνη":"#E63946"};
     if (!data.items || data.items.length === 0) {
       document.getElementById('history-list').innerHTML = '<div class="empty"><div class="empty-icon">📭</div>Δεν υπάρχουν εγγραφές</div>';
       return;
